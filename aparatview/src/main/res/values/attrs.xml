@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AparatView">
+        <attr name="aparatview_video_id" format="string" />
+        <attr name="aparatview_video_ratio" format="string" />
+    </declare-styleable>
+</resources>

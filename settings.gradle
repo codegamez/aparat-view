@@ -1,0 +1,3 @@
+include ':aparatview'
+include ':app'
+rootProject.name = "AparatViewDemo"
