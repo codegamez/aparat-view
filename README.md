@@ -33,15 +33,6 @@
 
 <h2 dir="rtl">نحوه نصب</h2>
 
-
-```gradle
-repositories {
-    maven {
-        url  "https://dl.bintray.com/codegames/aparat-view" 
-    }
-}
-```
-
 ```gradle
 dependencies {
     implementation 'com.codegames:aparatview:0.0.5'
