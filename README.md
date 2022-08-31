@@ -33,9 +33,19 @@
 
 <h2 dir="rtl">نحوه نصب</h2>
 
+[![](https://jitpack.io/v/codegamez/aparat-view.svg)](https://jitpack.io/#codegamez/aparat-view)
+
+```gradle
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
 ```gradle
 dependencies {
-    implementation 'com.codegames:aparatview:0.0.5'
+    implementation 'com.github.codegamez:aparat-view:0.0.6'
 }
 ```
 
