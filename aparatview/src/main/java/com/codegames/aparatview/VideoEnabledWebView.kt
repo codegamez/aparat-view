@@ -38,15 +38,15 @@ internal class VideoEnabledWebView : WebView {
     private var videoEnabledWebChromeClient: VideoEnabledWebChromeClient? = null
     private var addedJavascriptInterface: Boolean
 
-    constructor(context: Context?) : super(context) {
+    constructor(context: Context) : super(context) {
         addedJavascriptInterface = false
     }
 
-    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs) {
+    constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
         addedJavascriptInterface = false
     }
 
-    constructor(context: Context?, attrs: AttributeSet?, defStyle: Int) : super(
+    constructor(context: Context, attrs: AttributeSet?, defStyle: Int) : super(
         context,
         attrs,
         defStyle
@@ -66,7 +66,7 @@ internal class VideoEnabledWebView : WebView {
      * Pass only a VideoEnabledWebChromeClient instance.
      */
     @SuppressLint("SetJavaScriptEnabled")
-    override fun setWebChromeClient(client: WebChromeClient) {
+    override fun setWebChromeClient(client: WebChromeClient?) {
         settings.javaScriptEnabled = true
         if (client is VideoEnabledWebChromeClient) {
             videoEnabledWebChromeClient = client

@@ -158,6 +158,7 @@ internal open class VideoEnabledWebChromeClient
         }
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onShowCustomView(
         view: View,
         requestedOrientation: Int,
